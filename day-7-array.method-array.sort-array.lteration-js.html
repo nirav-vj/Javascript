@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java Script (Array Methods)</title>
+</head>
+
+<body>
+
+</body>
+<script>
+
+
+    let len = ["a", "b", "c", "d"] //length
+    console.log(len.length)
+
+    let str = ["a", "b", "c", "d", "e"]  //tostring
+    console.log(str.toString())
+
+    let po = ["Surat", "Ahemdabad", "Rajkot"] //pop
+    console.log(po)
+    console.log(po.pop())
+
+    let pu = ["Surat", "Ahemdabad", "Rajkot"]  //push
+    pu.push("Gujrat")
+    console.log(pu)
+
+    let sh = ["Mengo", "Apple", "Banana", "Kiwi"] //shift
+    console.log(sh)
+    console.log(sh.shift())
+
+    let uns = ["Mengo", "Apple", "Banana", "Kiwi"] //unshift
+    uns.unshift("Orange")
+    console.log(uns)
+
+    let del = ["Mengo", "Apple", "Banana", "Kiwi"] //delete
+    delete del[1]
+    console.log(del)
+
+    let so = ["Surat", "Ahemdabad", "Rajkot", "Valsad", "Bhavnagar"] //sort
+    console.log(so.sort())
+
+    let rev = ["Surat", "Ahemdabad", "Rajkot", "Valsad"]  //reverse
+    console.log(rev.reverse())
+
+    let ea = ["a", "b", "c", "d"] //forEach
+    ea.forEach(function (item, index, array) {
+        console.log(item, index)
+    })
+
+    let ma = [45, 10, 15, 25, 30]  //map
+    ma.map(function (item, array) {
+        console.log(item * 2)
+    })
+
+    let fil = [45, 0, 15, 9, 30]  //filter
+    fil.filter(function (item, array) {
+        console.log(item > 10)
+    })
+
+
+
+
+    //let ent = ["Surat", "Ahemdabad", "Rajkot", "Valsad"]
+    // ent.Object.entries(ent)
+    // console.log(ent)
+
+
+
+</script>
+
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    let hello = "hello surat my name is nirav vaja"
+    document.write(hello.split("").reverse("").join(""));
+
+</script>
+
+</html> -->

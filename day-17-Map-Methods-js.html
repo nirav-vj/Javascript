@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script Map (Methods)</title>
+</head>
+
+<body>
+
+</body>
+<script>
+
+
+    const fruits = new Map([
+        ["apples", 100],
+        ["bananas", 200],
+        ["oranges", 300]
+    ]);
+
+
+    console.log(fruits.get("bananas"));            //get()
+
+    fruits.delete("apples");                       //delete()
+
+    console.log(fruits.set("Graps", "200"));       //Set()
+
+    console.log(fruits.has("apples"));             //has()
+
+    console.log(fruits.size);                      // size()
+
+    console.log(fruits.entries(""));               // entries()
+
+    console.log(fruits.keys(""));                  // keys()
+
+    console.log(fruits.values(""))                 // values()
+
+    fruits.forEach(function (index, item) {        // forEach
+        console.log(item, index)
+    })
+
+
+
+    const fruit = new Map([
+        ["apples", 500],
+        ["bananas", 300],
+        ["oranges", 200]
+    ]);
+    console.log(fruit.clear(""));                  // clear()
+
+
+
+</script>
+
+</html>

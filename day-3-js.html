@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+
+</head>
+
+<body style="background-color: rgb(199, 227, 231);">
+
+
+</body>
+<p id="date"></p>
+
+<h1 id="vaja" style="background-color: yellow; text-align: center; width: 30%; margin-left: 35%; margin-top: 3%;">NIRAV
+    VAJA</h1>
+
+<h1 id="number" style="background-color: black; text-align: center; color: yellow; width: 30%; margin-left: 35%;"></h1>
+<!-- <h1 id="bull" style="text-align: center;"></h1> -->
+<button id="bull" onclick="document.getElementById('bull')" style="background-color: white; border: none; font-size: larger; background-color: rgb(199, 227, 231);"></button>
+<button id="bear" onclick="document.getElementById('bear')" style="background-color: white; border: none; font-size: larger; background-color: rgb(199, 227, 231);"></button>
+<button type="button" onclick="document.getElementById('vaja').style.fontSize='70px'"
+    style="margin-left: 42.5%; margin-top: 1%;">Click Me For Name!</button>
+<button type="button" onclick="document.getElementById('number').style.fontSize='70px'"
+    style="margin-left: 48%; margin-left: 1%;">Click Me For Number!</button>
+<button type="button" onclick="document.getElementById('date').innerHTML=Date()"
+    style="  margin-left: 45.5%; margin-top: 1%;">Click to find Date and Time.</button>
+
+<script>
+    let X = 10;
+    let Y = 10;
+    let Z = 20;
+
+    document.getElementById("bull").innerHTML = (X == Y)(window.alert(false));
+
+    let A = 10;
+    let B = 10;
+    let C = 20;
+    document.getElementById("bear").innerHTML = (A == B) + "<br>" + (A == C);
+
+
+    let a = 'nirav';
+    let b = 'my name is ' + a;
+    console.log(b);
+
+    let c = 'vaja';
+    let d = 'my last name is ' + c;
+    console.log(d);
+
+    let e = ' 20';
+    let f = 'My Age Is =' + e;
+    console.log(f);
+
+    let a1 = ' 40 celsius';
+    let a2 = 'today weather =' + a1;
+    console.log(a2);
+
+    let x = myFunction(10, 2);
+    document.getElementById("number").innerHTML = x;
+
+    function myFunction(a, b) {
+        return a * b;
+    }
+    // window.alert(0)
+
+</script>
+
+</html>

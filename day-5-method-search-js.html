@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java script (Search Methods)</title>
+</head>
+
+<body>
+
+</body>
+<script>
+
+    let name = "hello surat how are you all";
+    console.log(name.length);
+
+    let fru = "Banana,apple,graps";
+    console.log(fru.substring(7, 13));
+
+    let vaja = "      nirav        "
+    console.log(vaja)
+    console.log(vaja.trim())
+    console.log(vaja.trimStart())
+    console.log(vaja.trimEnd())
+
+    let ptext = "5"
+    console.log(ptext.padEnd(4, 0))
+
+    let text = "hello surat i am nirav vaja anchor to night";
+    let nirav = text.indexOf("nirav");
+    console.log(nirav)
+
+    let bhai = "hello surat i am nirav vaja anchor to night";
+    let chirag = text.search("nirav");
+    console.log(chirag)
+
+    let hello = "hello surat i am nirav vaja anchor to night";
+    let search = text.includes("nirav");
+    console.log(search)
+
+
+</script>
+
+</html>

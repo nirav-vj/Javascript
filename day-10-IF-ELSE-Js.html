@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script (IF & ELSE)</title>
+
+
+</head>
+
+<body>
+    <input type="text" id="ageInput">
+    <button onclick="nirav()">SUBMIT</button>
+    <h3 id="inputValue" style="font-size: x-large;"></h3>
+
+</body>
+<script>
+    function nirav() {
+
+        var ageInput = document.getElementById("ageInput").value;
+        var age = ageInput;
+
+        if (age < 19) {
+            document.getElementById("inputValue").innerText = "Childe";
+        }
+        else if (age < 26) {
+            document.getElementById("inputValue").innerText = "Adult";
+        }
+        else if (age < 41) {
+            document.getElementById("inputValue").innerText = "Young";
+        }
+        else if (age < 101) {
+            document.getElementById("inputValue").innerText = "Old";
+        }
+        else {
+            document.getElementById("inputValue").innerText = "Wrong Number";
+
+        }
+
+    }
+
+    
+
+</script>
+
+</html>

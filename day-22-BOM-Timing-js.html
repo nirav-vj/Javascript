@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM Timeing & setInterval </title>
+</head>
+
+<body>
+    <h1 id="intervel"></h1>
+
+</body>
+<button onclick="setTimeout(myFunction, 5000);">Click</button>
+
+<script>
+    function myFunction() {
+        alert('Hello You Click The Wrong Button');
+    }
+
+    setInterval(myTimer, 1000);
+    function myTimer() {
+        const d = new Date();
+        document.getElementById("intervel").innerHTML = d.toLocaleTimeString();
+    }
+</script>
+
+</html>

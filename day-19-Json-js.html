@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+
+<body>
+
+</body>
+<script>
+
+
+    var person = {
+        firstName: "Nirav",
+        lastName: "Vaja",
+        Age: 21,
+        fullName: function () {
+            this.firstName + "" + this.lastName;
+        }
+    };
+    document.write(person.fullName);
+
+
+
+
+    let jsonobj = {
+
+        Firstname: "Nirav",
+        Lastname: "Vaja",
+        Age: "21",
+        FavouriteFruite: "Mango"
+
+    }
+    // console.log(jsonobj);
+
+    let Jesonstr = JSON.stringify(jsonobj);
+    console.log(Jesonstr);
+
+    Jesonstr = Jesonstr.replace("Nirav", "Chirag");
+    console.log(Jesonstr)
+
+    let Jesonobj = JSON.parse(Jesonstr);
+    console.log(Jesonobj);
+
+
+</script>
+
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script (Switch)</title>
+</head>
+
+<body>
+    <input type="number" id="Inputage">
+    <button onclick="vaja()">SUBMIT</button>
+    <h3 id="inputValue" style="font-size: x-large;"> </h3>
+
+</body>
+<script>
+    function vaja() {
+        var Inputage = document.getElementById("Inputage").value;
+        var inputValue = document.getElementById("inputValue");
+
+        switch (Inputage) {
+        case "0":
+                document.getElementById("inputValue").innerText = "Child"
+                break;
+
+            case "1":
+               document.getElementById("inputValue").innerText = "Adulte"
+                break;
+
+            case "2":
+                 document.getElementById("inputValue").innerText = "Young"                          
+                break;
+
+            case "3":
+               document.getElementById("inputValue").innerText = "Old"
+                break;
+
+            default:
+                 document.getElementById("inputValue").innerText = "Wrong"
+                break;
+        }
+         
+    }
+</script>
+
+</html>
